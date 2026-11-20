@@ -1,0 +1,26 @@
+{
+  "name": "fincamarket-backend",
+  "version": "1.0.0",
+  "description": "API REST de FincaMarket - gestión de pedidos y liquidación semanal",
+  "main": "src/server.js",
+  "private": true,
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "db:init": "node scripts/init-db.js",
+    "db:demo": "node scripts/demo-data.js",
+    "test": "node scripts/test-api.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.10",
+    "exceljs": "^4.4.0",
+    "express": "^5.3.0",
+    "mysql2": "^3.24.6",
+    "pdfkit": "^0.20.2",
+    "zod": "^4.6.7"
+  }
+}
